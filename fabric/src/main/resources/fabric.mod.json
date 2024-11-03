@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "advancedrocket",
+  "version": "${version}",
+  "name": "advancedrocket",
+  "description": "Advanced rocket addons for the Stellaris mod !",
+  "authors": ["The Stellaris Team"],
+  "contact": {},
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.st0x0ef.advancedrocket.fabric.AdvancedRocketFabric"
+    ],
+    "client": [
+      "com.st0x0ef.advancedrocket.fabric.client.AdvancedRocketFabricClient::onInitializeClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.21",
+    "architectury": ">=13.0.6",
+    "fabric-api": ">=0.100.8",
+    "stellaris": "1.2.0-beta1"
+  }
+}

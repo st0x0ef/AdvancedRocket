@@ -1,0 +1,45 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "CC BY-NC-SA 4.0"
+issueTrackerURL = "https://github.com/st0x0ef/advancedrocket/issues"
+
+[[mods]]
+modId = "advancedrocket"
+version = "${version}"
+displayName = "advancedrocket"
+authors = "The Stellaris Team"
+logoFile = "logo.png"
+description = '''
+Advanced rocket addons for the Stellaris mod !
+'''
+
+[[dependencies.advancedrocket]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.advancedrocket]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.advancedrocket]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.advancedrocket]]
+modId = "stellaris"
+type = "required"
+versionRange = "[1.2.0-beta1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "advancedrocket-common.mixins.json"
